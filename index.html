@@ -4,10 +4,21 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SKY LINE JOURNEYS</title>
+        <title>SKY LINE JOURNEYS - Where Every Journey Begins</title>
+        <meta name="description" content="Discover extraordinary travel experiences with SKY LINE JOURNEYS. Expert guided tours, adventure expeditions, and personalized travel planning." />
+        
+        <!-- Preconnect to external domains -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://code.jquery.com" />
+        
+        <!-- Defer non-critical CSS -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            media="print"
+            onload="this.media='all'"
         />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/responsive.css" />
@@ -82,14 +93,14 @@
 
         <header id="home">
             <div class="header-content">
-                <h2 id="quote">Explore the colourful World</h2>
+                <h2 id="quote">Explore the Colorful World</h2>
                 <div class="line"></div>
-                <h1>A WONDERFUL GIFT</h1>
+                <h1>WHERE EVERY JOURNEY BEGINS</h1>
                 <a
                     href="#about"
                     class="ctn"
                     onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
-                    >Learn more</a
+                    >Discover More</a
                 >
             </div>
         </header>
@@ -103,33 +114,28 @@
                 </div>
                 <div class="row">
                     <article class="card col">
-                        <img class="card-img" src="./img/img1.jfif" />
-                        <h4 class="dark">Everest camp trek</h4>
+                        <img class="card-img" src="./img/img1.jfif" alt="Everest Base Camp Trek" loading="lazy" />
+                        <h4 class="dark">Everest Base Camp Trek</h4>
                         <p class="font-color">
-                            Everest base camp trek is without a doubt, one of
-                            the most renowned travel destinations in the world.
+                            Experience the journey of a lifetime with our expertly guided Everest Base Camp trek. Witness breathtaking Himalayan views and immerse yourself in Sherpa culture.
                         </p>
-                        <a href="#" class="ctn">All Details</a>
+                        <a href="#" class="ctn">Learn More</a>
                     </article>
                     <article class="card col">
-                        <img src="./img/img2.jfif" />
-                        <h4 class="dark">Walking holidays</h4>
+                        <img src="./img/img2.jfif" alt="Guided Walking Tours" loading="lazy" />
+                        <h4 class="dark">Guided Walking Tours</h4>
                         <p class="font-color">
-                            Join small guided group walks, enjoy a challenging
-                            trek, or a luxury private guided walk which can be
-                            made especially for you.
+                            Discover hidden gems with our small group walking tours. From challenging mountain treks to leisurely city walks, we offer personalized experiences for every traveler.
                         </p>
-                        <a href="#" class="ctn">All Details</a>
+                        <a href="#" class="ctn">Learn More</a>
                     </article>
                     <article class="card col">
-                        <img src="./img/img2.jfif" />
-                        <h4 class="dark">Andaman Beaches</h4>
+                        <img src="./img/img2.jfif" alt="Tropical Beach Escapes" loading="lazy" />
+                        <h4 class="dark">Tropical Beach Escapes</h4>
                         <p class="font-color">
-                            Diving in Andaman Beaches is exceptional. The costal
-                            belt surroundings is one of the richest coral reef
-                            ecosystems in the world.
+                            Relax on pristine beaches and explore vibrant coral reefs. Our tropical destinations offer the perfect blend of adventure and relaxation in paradise.
                         </p>
-                        <a href="#" class="ctn">All Details</a>
+                        <a href="#" class="ctn">Learn More</a>
                     </article>
                 </div>
             </div>
@@ -151,7 +157,6 @@
             </div>
         </section>
         <!--Explore-->
-
         <!--tours-->
         <section class="tours" id="tours">
             <div class="container row">
@@ -170,10 +175,10 @@
                 </div>
                 <div class="image-col">
                     <div class="image-gallery">
-                        <img src="./img/img3.png" alt="" />
-                        <img src="./img/img4.png" alt="" />
-                        <img src="./img/img5.png" alt="" />
-                        <img src="./img/img6.png" alt="" />
+                        <img src="./img/img3.png" alt="Tour destination 1" loading="lazy" />
+                        <img src="./img/img4.png" alt="Tour destination 2" loading="lazy" />
+                        <img src="./img/img5.png" alt="Tour destination 3" loading="lazy" />
+                        <img src="./img/img6.png" alt="Tour destination 4" loading="lazy" />
                     </div>
                 </div>
             </div>
@@ -196,13 +201,13 @@
                         <input type="radio" name="slider" id="item-3" />
                         <div class="cards">
                             <label class="cardt" for="item-1" id="col-img-1">
-                                <img src="./img/carousel-img4.jpg" />
+                                <img src="./img/carousel-img4.jpg" alt="About SKY LINE JOURNEYS" loading="lazy" />
                             </label>
                             <label class="cardt" for="item-2" id="col-img-2">
-                                <img src="./img/carousel-img5.jpg" />
+                                <img src="./img/carousel-img5.jpg" alt="Travel experiences" loading="lazy" />
                             </label>
                             <label class="cardt" for="item-3" id="col-img-3">
-                                <img src="./img/carousel-img6.jpg" />
+                                <img src="./img/carousel-img6.jpg" alt="Adventure destinations" loading="lazy" />
                             </label>
                             
                         </div>
@@ -325,21 +330,21 @@
                         <div class="cbox-line"></div>
                     </div>
                     <div class="c_boxx">
-                        <a href="mailto:abc@gmail.com"
+                        <a href="mailto:info@skylinejourneys.com"
                             ><i class="fa fa-envelope"></i>
-                            Mail: tourism@SKY LINE JOURNEYS.com
+                            Mail: info@skylinejourneys.com
                         </a>
                     </div>
                     <div class="c_boxx">
-                        <a href="tel:+91-12345-67890"
+                        <a href="tel:+1-800-555-0123"
                             ><i class="fa fa-phone"></i>
-                            Phone: (+91) 12345-67890
+                            Phone: +1 (800) 555-0123
                         </a>
                     </div>
                     <div class="c_boxx">
                         <a href="#"
                             ><i class="fa fa-map-marker"></i>
-                            Location: Kolkata,West Bengal,India
+                            Location: 123 Travel Street, Adventure City, USA
                         </a>
                     </div>
                 </div>
@@ -352,25 +357,30 @@
         <!--footer-->
         <section class="footer">
             <span
-                >Created By Pritam Sarbajna | &#169; 2022 All rights
-                reserved.</span
+                >&#169; 2024 SKY LINE JOURNEYS. All rights reserved.</span
             >
             <div class="social">
                 <li>
                     <a
-                        href="https://pritam-sarbajna-portfolio.netlify.app/"
+                        href="#home"
                         target="_blank"
                         rel="noreferrer"
-                        ><i class="fa fa-globe"></i
+                        ><i class="fa fa-facebook"></i
                     ></a>
                     <a
-                        href="https://github.com/PritamSarbajna"
+                        href="#home"
                         target="_blank"
                         rel="noreferrer"
-                        ><i class="fa fa-github"></i
+                        ><i class="fa fa-instagram"></i
                     ></a>
                     <a
-                        href="https://www.linkedin.com/in/pritam-sarbajna-74945821b/"
+                        href="#home"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fa fa-twitter"></i
+                    ></a>
+                    <a
+                        href="#home"
                         target="_blank"
                         rel="noreferrer"
                         ><i class="fa fa-linkedin-square"></i
@@ -388,7 +398,7 @@
                 navlinks.classList.toggle("mobile-menu");
             });
         </script>
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+        <script src="js/script.js" defer></script>
     </body>
 </html>
