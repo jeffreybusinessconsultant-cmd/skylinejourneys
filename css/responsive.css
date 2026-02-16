@@ -167,3 +167,48 @@
     text-align: justify;
   }
 }
+
+
+/* Responsive styles for new sections */
+@media screen and (max-width: 850px) {
+  .testimonials .row,
+  .services .row,
+  .destinations .row {
+    flex-direction: column;
+  }
+
+  .testimonials .col,
+  .services .col,
+  .destinations .col {
+    min-width: 100%;
+  }
+
+  .why-book {
+    width: 90%;
+    padding: 2rem 1.5rem;
+  }
+
+  .why-book .feature-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-book .feature-item i {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonials,
+  .destinations {
+    width: 90%;
+  }
+
+  .services .container {
+    width: 90%;
+  }
+
+  .services .col {
+    padding: 1rem;
+  }
+}

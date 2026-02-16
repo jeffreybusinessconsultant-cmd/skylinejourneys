@@ -884,3 +884,193 @@ input[type=radio] {
 }
 
 /* end */
+
+/* Testimonials Section */
+.testimonials {
+  width: 80%;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.testimonials .row {
+  margin-top: 50px;
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.testimonials .col {
+  flex: 1;
+  min-width: 280px;
+  padding: 2rem;
+  background: rgba(252, 3, 107, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.testimonials .col:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(252, 3, 107, 0.2);
+}
+
+.testimonials .col p {
+  font-style: italic;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: inherit;
+  padding: 0;
+}
+
+.testimonials .col h4 {
+  font-family: var(--ff-montserrat);
+  margin-top: 1rem;
+}
+
+.testimonials .rating {
+  color: #fc036b;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Services Section */
+.services {
+  width: 100%;
+  padding: 80px 0;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/bg2.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.services .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.services .row {
+  margin-top: 50px;
+  gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services .col {
+  flex: 1;
+  min-width: 220px;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+}
+
+.services .col i {
+  font-size: 3rem;
+  color: #fc036b;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.services .col h3 {
+  font-family: var(--ff-montserrat);
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.services .col p {
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0;
+}
+
+/* Popular Destinations */
+.destinations {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.destinations .row {
+  margin-top: 50px;
+  gap: 2rem;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.destinations .col {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.destinations .col > div {
+  padding: 1.5rem;
+  border: 2px solid #fc036b;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.destinations .col > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(252, 3, 107, 0.3);
+  background: rgba(252, 3, 107, 0.05);
+}
+
+.destinations .col i {
+  font-size: 2.5rem;
+  color: #fc036b;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.destinations .col h3 {
+  font-family: var(--ff-montserrat);
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.destinations .col p {
+  line-height: 1.6;
+  padding: 0;
+}
+
+/* Why Book With Us */
+.why-book {
+  width: 80%;
+  margin: 80px auto;
+  padding: 3rem;
+  background: linear-gradient(135deg, rgba(252, 3, 107, 0.1), rgba(252, 3, 107, 0.05));
+  border-radius: 15px;
+}
+
+.why-book .feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.why-book .feature-item:last-child {
+  margin-bottom: 0;
+}
+
+.why-book .feature-item i {
+  font-size: 2rem;
+  color: #fc036b;
+  margin-top: 0.3rem;
+  flex-shrink: 0;
+}
+
+.why-book .feature-item h3 {
+  font-family: var(--ff-montserrat);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.why-book .feature-item p {
+  line-height: 1.8;
+  padding: 0;
+  margin: 0;
+}
+
+.why-book .feature-content {
+  margin-top: 2rem;
+}
