@@ -41,13 +41,11 @@
         />
         <link rel="manifest" href="/site.webmanifest" />
     </head>
-    <body
-        onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
-    >
+    <body>
         <!--navbar-->
         <nav class="navbar glass" style="height: 70px">
             <span
-                ><a href="#home" style="display: flex; align-items: center"
+                ><a href="index.html" style="display: flex; align-items: center"
                     ><img
                         class="img2"
                         src="./img/mountain.png"
@@ -59,18 +57,18 @@
             >
             <ul class="nav-links">
                 <li>
-                    <a href="#home" id="pri" class="active cir_border">Home</a>
+                    <a href="index.html" id="pri" class="active cir_border">Home</a>
                 </li>
-                <li><a href="#events" id="sec" class="cir_border">Events</a></li>
+                <li><a href="events.html" id="sec" class="cir_border">Events</a></li>
                 <li>
-                    <a href="#explore" id="tri" class="cir_border">Explore</a>
+                    <a href="explore.html" id="tri" class="cir_border">Explore</a>
                 </li>
                 <li>
-                    <a href="#tours" id="quad" class="cir_border">Tours</a>
+                    <a href="tours.html" id="quad" class="cir_border">Tours</a>
                 </li>
-                <li><a href="#about" id="quint" class="cir_border">About</a></li>
+                <li><a href="about.html" id="quint" class="cir_border">About</a></li>
                 <li>
-                    <a href="#contact" id="hept" class="cir_border">Contact</a>
+                    <a href="contact.html" id="hept" class="cir_border">Contact</a>
                 </li>
                 <li>
                     <div>
@@ -96,178 +94,9 @@
                 <h2 id="quote">Explore the Colorful World</h2>
                 <div class="line"></div>
                 <h1>WHERE EVERY JOURNEY BEGINS</h1>
-                <a
-                    href="#about"
-                    class="ctn"
-                    onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
-                    >Discover More</a
-                >
+                <a href="about.html" class="ctn">Discover More</a>
             </div>
         </header>
-
-        <!--Events-->
-        <section class="events" id="events">
-            <div class="container">
-                <div class="title">
-                    <h1 class="dark">Upcoming Events</h1>
-                    <div class="line"></div>
-                </div>
-                <div class="row">
-                    <article class="card col">
-                        <img class="card-img" src="./img/img1.jfif" alt="Manali Himalayan Trek" loading="lazy" />
-                        <h4 class="dark">Manali Himalayan Trek</h4>
-                        <p class="font-color">
-                            Experience the majestic Himalayas with our guided trek through Manali's stunning valleys. Witness snow-capped peaks, pristine rivers, and authentic mountain culture.
-                        </p>
-                        <a href="#" class="ctn">Learn More</a>
-                    </article>
-                    <article class="card col">
-                        <img src="./img/img2.jfif" alt="Kerala Backwaters Tour" loading="lazy" />
-                        <h4 class="dark">Kerala Backwaters Tour</h4>
-                        <p class="font-color">
-                            Cruise through the serene backwaters of Alleppey and Kumarakom. Experience traditional houseboats, lush greenery, and authentic Kerala cuisine on this peaceful journey.
-                        </p>
-                        <a href="#" class="ctn">Learn More</a>
-                    </article>
-                    <article class="card col">
-                        <img src="./img/img2.jfif" alt="Goa Beach Paradise" loading="lazy" />
-                        <h4 class="dark">Goa Beach Paradise</h4>
-                        <p class="font-color">
-                            Relax on golden beaches of North and South Goa. Enjoy water sports, vibrant nightlife, Portuguese heritage sites, and fresh seafood in India's beach capital.
-                        </p>
-                        <a href="#" class="ctn">Learn More</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!--Events-->
-
-        <!--Explore-->
-        <section class="explore" id="explore">
-            <div class="explore-content">
-                <h1>EXPLORE THE WORLD</h1>
-                <div class="line"></div>
-                <p>
-                    “Travel makes one modest. You see what a tiny place you
-                    occupy in the world.”– Gustav Flaubert <br />Exploring will
-                    make you want to pack your bag, book that ticket and jet
-                    away.
-                </p>
-                <a href="#" class="ctn">Explore more</a>
-            </div>
-        </section>
-        <!--Explore-->
-        <!--tours-->
-        <section class="tours" id="tours">
-            <div class="container row">
-                <div class="col content-col">
-                    <h1 class="font-color">UPCOMING TOURS & DESTINATIONS</h1>
-                    <div class="line"></div>
-                    <p>
-                        15 Dec 2024: Rajasthan Heritage Tour - Jaipur, Udaipur & Jodhpur<br />
-                        22 Dec 2024: Shimla-Manali Winter Special Package<br />
-                        5 Jan 2025: Andaman Islands Beach Getaway<br />
-                        18 Jan 2025: Golden Triangle Tour - Delhi, Agra & Jaipur<br />
-                        and many more exciting destinations...
-                    </p>
-                    <a href="#contact" class="ctn">Book Now</a>
-                </div>
-                <div class="image-col">
-                    <div class="image-gallery">
-                        <img src="./img/img3.png" alt="Tour destination 1" loading="lazy" />
-                        <img src="./img/img4.png" alt="Tour destination 2" loading="lazy" />
-                        <img src="./img/img5.png" alt="Tour destination 3" loading="lazy" />
-                        <img src="./img/img6.png" alt="Tour destination 4" loading="lazy" />
-                    </div>
-                </div>
-            </div>
-            <br /><br /><br /><br />
-        </section>
-        <!--tours-->
-
-        <!-- About -->
-        <section id="about">
-            <div class="title">
-                <h1 class="font-color">About Us</h1>
-                <div class="line"></div>
-            </div>
-            <br />
-            <div id="about_us">
-                <div class="boxx">
-                    <div class="containerx">
-                        <input type="radio" name="slider" id="item-1" checked />
-                        <input type="radio" name="slider" id="item-2" />
-                        <input type="radio" name="slider" id="item-3" />
-                        <div class="cards">
-                            <label class="cardt" for="item-1" id="col-img-1">
-                                <img src="./img/carousel-img4.jpg" alt="About SKY LINE JOURNEYS" loading="lazy" />
-                            </label>
-                            <label class="cardt" for="item-2" id="col-img-2">
-                                <img src="./img/carousel-img5.jpg" alt="Travel experiences" loading="lazy" />
-                            </label>
-                            <label class="cardt" for="item-3" id="col-img-3">
-                                <img src="./img/carousel-img6.jpg" alt="Adventure destinations" loading="lazy" />
-                            </label>
-                            
-                        </div>
-                    </div>
-                    <span id="about-quad"
-                        ><a href="#home"
-                            ><center>
-                                <h1
-                                    style="
-                                        font-family: var(--ff-montserrat);
-                                        color: white;
-                                    "
-                                >
-                                    Find that
-                                </h1>
-                                <br />
-                                <img
-                                    class="img2"
-                                    src="./img/mountain_dark.jpg"
-                                    width="200"
-                                    style="border-radius: 12%"
-                                />
-                                <br />
-                                <h1 class="logo" style="font-size: 50px">
-                                    SKY LINE JOURNEYS
-                                </h1>
-                            </center>
-                        </a>
-                    </span>
-                </div>
-            </div>
-        </section>
-        <!-- About -->
-
-        <!-- About Content -->
-        <section class="about-content" style="width: 80%; margin: 50px auto;">
-            <div class="container">
-                <div class="row" style="gap: 3rem; align-items: flex-start;">
-                    <div class="col" style="flex: 1;">
-                        <h2 class="font-color" style="font-family: var(--ff-montserrat); font-size: 2rem; margin-bottom: 1rem;">Our Story</h2>
-                        <p style="line-height: 1.8; text-align: justify;">
-                            At SKY LINE JOURNEYS, we believe that travel is more than just visiting new places—it's about creating unforgettable memories and discovering the beauty of our world. Founded with a passion for exploration, we've been helping travelers embark on their dream adventures for years.
-                        </p>
-                        <p style="line-height: 1.8; text-align: justify; margin-top: 1rem;">
-                            Our team of experienced travel enthusiasts carefully curates each destination, ensuring you experience the authentic culture, breathtaking landscapes, and hidden gems that make every journey special.
-                        </p>
-                    </div>
-                    <div class="col" style="flex: 1;">
-                        <h2 class="font-color" style="font-family: var(--ff-montserrat); font-size: 2rem; margin-bottom: 1rem;">Why Choose Us</h2>
-                        <ul style="line-height: 2; list-style: none; padding: 0;">
-                            <li style="margin-bottom: 0.8rem;">✈️ <strong>Expert Guidance:</strong> Professional travel advisors with local knowledge</li>
-                            <li style="margin-bottom: 0.8rem;">🌍 <strong>Diverse Destinations:</strong> From mountain peaks to tropical beaches</li>
-                            <li style="margin-bottom: 0.8rem;">💎 <strong>Best Value:</strong> Competitive prices without compromising quality</li>
-                            <li style="margin-bottom: 0.8rem;">🛡️ <strong>Safe & Secure:</strong> Your safety is our top priority</li>
-                            <li style="margin-bottom: 0.8rem;">⭐ <strong>24/7 Support:</strong> We're here for you every step of the way</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Content -->
 
         <!-- Testimonials Section -->
         <section class="testimonials">
@@ -356,45 +185,6 @@
         </section>
         <!-- Services Section -->
 
-        <!-- Popular Destinations -->
-        <section class="destinations">
-            <div class="title">
-                <h1 class="font-color">Popular Destinations</h1>
-                <div class="line"></div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div>
-                        <i class="fa fa-map-marker"></i>
-                        <h3 class="font-color">Ladakh</h3>
-                        <p>The Land of High Passes - Adventure, monasteries, and breathtaking landscapes</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div>
-                        <i class="fa fa-map-marker"></i>
-                        <h3 class="font-color">Varanasi</h3>
-                        <p>Spiritual capital of India - Ancient temples, Ganga Aarti, and rich culture</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div>
-                        <i class="fa fa-map-marker"></i>
-                        <h3 class="font-color">Rishikesh</h3>
-                        <p>Yoga capital - River rafting, adventure sports, and spiritual retreats</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div>
-                        <i class="fa fa-map-marker"></i>
-                        <h3 class="font-color">Ooty</h3>
-                        <p>Queen of Hill Stations - Tea gardens, scenic railways, and pleasant weather</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Popular Destinations -->
-
         <!-- Why Book With Us -->
         <section class="why-book">
             <div class="title">
@@ -441,122 +231,64 @@
         </section>
         <!-- Why Book With Us -->
 
-        <!-- contact -->
-        <section id="contact">
-            <div class="title">
-                <h1 class="font-color">Contact Us</h1>
-                <div class="line"></div>
-            </div>
-            <div class="contact_us">
-                <form class="cform" action="" method="post">
-                    <div class="crow-message">
-                        <h1 class="color">Send us a message</h1>
-                        <div></div>
-                    </div>
-                    <div class="crow-in">
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Your name"
-                        />
-                        <input
-                            type="text"
-                            id="email"
-                            name="email"
-                            placeholder="Your Email id"
-                        />
-                    </div>
-                    <div class="crow">
-                        <div class="ccol-left">
-                            <select name="country" id="country">
-                                <option value="India">India</option>
-                                <option value="Russia">Russia</option>
-                                <option value="usa">USA</option>
-                                <option value="Japan">Japan</option>
-                                <option value="France">France</option>
-                                <option value="Brazil">Brazil</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="crow">
-                        <div class="ccol-left">
-                            <textarea
-                                type="text"
-                                id="remarks"
-                                name="remarks"
-                                placeholder="Your Remarks....."
-                                style="height: 150px"
-                            ></textarea>
-                        </div>
-                    </div>
-                    <input class="crow-s" type="submit" value="Submit" />
-                </form>
-                <div class="cbox">
-                    <div>
-                        <p class="cbox-message">
-                            Prefer some other way ?<br />Reach us by using the
-                            details given below
-                        </p>
-                        <div class="cbox-line"></div>
-                    </div>
-                    <div class="c_boxx">
-                        <a href="mailto:info@skylinejourneys.com"
-                            ><i class="fa fa-envelope"></i>
-                            Mail: info@skylinejourneys.com
-                        </a>
-                    </div>
-                    <div class="c_boxx">
-                        <a href="tel:+919876543210"
-                            ><i class="fa fa-phone"></i>
-                            Phone: +91 98765 43210
-                        </a>
-                    </div>
-                    <div class="c_boxx">
-                        <a href="#"
-                            ><i class="fa fa-map-marker"></i>
-                            Location: 3rd Floor, Arundelpet, Guntur, Andhra Pradesh 522002, India
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- contact  -->
         <!-- up scroll -->
         <i class="arrow"  onclick="topFunction()" id="upbtn"></i>
         <!-- end -->
+
         <!--footer-->
         <section class="footer">
-            <span
-                >&#169; 2024 SKY LINE JOURNEYS. All rights reserved.</span
-            >
-            <div class="social">
-                <li>
-                    <a
-                        href="#home"
-                        target="_blank"
-                        rel="noreferrer"
-                        ><i class="fa fa-facebook"></i
-                    ></a>
-                    <a
-                        href="#home"
-                        target="_blank"
-                        rel="noreferrer"
-                        ><i class="fa fa-instagram"></i
-                    ></a>
-                    <a
-                        href="#home"
-                        target="_blank"
-                        rel="noreferrer"
-                        ><i class="fa fa-twitter"></i
-                    ></a>
-                    <a
-                        href="#home"
-                        target="_blank"
-                        rel="noreferrer"
-                        ><i class="fa fa-linkedin-square"></i
-                    ></a>
-                </li>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SKY LINE JOURNEYS</h3>
+                    <p>Your trusted travel partner since 2014. Creating unforgettable memories across India's most beautiful destinations.</p>
+                    <div class="social">
+                        <a href="#" target="_blank" rel="noreferrer"><i class="fa fa-facebook"></i></a>
+                        <a href="#" target="_blank" rel="noreferrer"><i class="fa fa-instagram"></i></a>
+                        <a href="#" target="_blank" rel="noreferrer"><i class="fa fa-twitter"></i></a>
+                        <a href="#" target="_blank" rel="noreferrer"><i class="fa fa-linkedin-square"></i></a>
+                        <a href="#" target="_blank" rel="noreferrer"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="tours.html">Tour Packages</a></li>
+                        <li><a href="events.html">Upcoming Events</a></li>
+                        <li><a href="explore.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Popular Destinations</h3>
+                    <ul class="footer-links">
+                        <li><a href="tours.html">Manali & Shimla</a></li>
+                        <li><a href="tours.html">Kerala Backwaters</a></li>
+                        <li><a href="tours.html">Goa Beaches</a></li>
+                        <li><a href="tours.html">Rajasthan Heritage</a></li>
+                        <li><a href="tours.html">Andaman Islands</a></li>
+                        <li><a href="tours.html">Ladakh Adventure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fa fa-map-marker"></i> 3rd Floor, Arundelpet Complex<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guntur - 522002, Andhra Pradesh</li>
+                        <li><i class="fa fa-phone"></i> +91-863-2234567</li>
+                        <li><i class="fa fa-mobile"></i> +91-9876543210</li>
+                        <li><i class="fa fa-envelope"></i> info@skylinejourneys.com</li>
+                        <li><i class="fa fa-clock-o"></i> Mon - Sat: 9:00 AM - 7:00 PM<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunday: 10:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&#169; 2026 SKY LINE JOURNEYS. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+                <p style="font-size: 0.85rem; margin-top: 0.5rem;">Ministry of Tourism Approved | IATA Accredited | ISO 9001:2015 Certified</p>
             </div>
         </section>
         <!--footer-->

@@ -1,0 +1,409 @@
+/* Tours Page - Proper Alignment */
+
+/* Tours Section Container */
+.tours {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+.tours .container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.tours .title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tours .title h1 {
+  font-family: var(--ff-montserrat);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 1rem;
+}
+
+.tours .title p {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  margin-top: 1rem;
+}
+
+/* Tour Categories Grid */
+.tour-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.tour-category-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.tour-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border-color: #fc036b;
+}
+
+.tour-category-card h2 {
+  font-family: var(--ff-montserrat);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  margin-bottom: 1.5rem;
+  color: inherit;
+  font-weight: 700;
+}
+
+/* Individual Tour Package */
+.tour-package {
+  border-left: 4px solid #667eea;
+  padding-left: 1.2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.tour-package:last-child {
+  margin-bottom: 0;
+}
+
+.tour-package:hover {
+  border-left-color: #fc036b;
+  padding-left: 1.5rem;
+}
+
+.tour-package h4 {
+  font-family: var(--ff-montserrat);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  margin-bottom: 0.8rem;
+  color: inherit;
+  font-weight: 600;
+}
+
+.tour-package .tour-meta {
+  font-size: clamp(0.85rem, 1.5vw, 0.9rem);
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.tour-package .tour-meta strong {
+  color: #fc036b;
+  font-weight: 600;
+}
+
+.tour-package .tour-description {
+  font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+  line-height: 1.6;
+  margin: 0.8rem 0;
+  color: inherit;
+  opacity: 0.9;
+}
+
+.tour-package .tour-price {
+  margin-top: 0.8rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+.tour-package .tour-price strong {
+  color: #fc036b;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+/* Beach & Island Tours - Pink Border */
+.tour-category-card:nth-child(2) .tour-package {
+  border-left-color: #f093fb;
+}
+
+.tour-category-card:nth-child(2) .tour-package:hover {
+  border-left-color: #fc036b;
+}
+
+/* Heritage Tours - Red Border */
+.tour-category-card:nth-child(3) .tour-package {
+  border-left-color: #fa709a;
+}
+
+.tour-category-card:nth-child(3) .tour-package:hover {
+  border-left-color: #fc036b;
+}
+
+/* Special Interest Tours - Blue Border */
+.tour-category-card:nth-child(4) .tour-package {
+  border-left-color: #4facfe;
+}
+
+.tour-category-card:nth-child(4) .tour-package:hover {
+  border-left-color: #fc036b;
+}
+
+/* Tour Inclusions Section */
+.tour-inclusions {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 5rem 0;
+  margin-top: 4rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.tour-inclusions::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: floatInclusions 10s ease-in-out infinite;
+}
+
+.tour-inclusions::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: floatInclusions 12s ease-in-out infinite reverse;
+}
+
+@keyframes floatInclusions {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-30px, 30px) scale(1.1);
+  }
+}
+
+.tour-inclusions .container {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+.tour-inclusions .title h1 {
+  color: white;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: var(--ff-montserrat);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tour-inclusions .title .line {
+  background: white;
+  width: 120px;
+  height: 4px;
+  margin: 0 auto 3rem;
+}
+
+.inclusions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.inclusion-item {
+  text-align: center;
+  color: white;
+  padding: 2.5rem 2rem;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.inclusion-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #fc036b, #ffd700, #fc036b);
+  background-size: 200% 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.inclusion-item:hover::before {
+  transform: scaleX(1);
+}
+
+.inclusion-item:hover {
+  transform: translateY(-15px) scale(1.03);
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 215, 0, 0.5);
+}
+
+.inclusion-item i {
+  font-size: clamp(3rem, 6vw, 4rem);
+  margin-bottom: 1.5rem;
+  display: block;
+  color: #ffd700;
+  transition: all 0.4s ease;
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.inclusion-item:hover i {
+  transform: scale(1.2) rotate(5deg);
+  color: #fff;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+.inclusion-item h3 {
+  font-family: var(--ff-montserrat);
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.inclusion-item h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #ffd700, transparent);
+  transition: width 0.4s ease;
+}
+
+.inclusion-item:hover h3::after {
+  width: 80px;
+}
+
+.inclusion-item p {
+  font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+  line-height: 1.7;
+  padding: 0;
+  font-family: var(--ff-roboto);
+  opacity: 0.95;
+  transition: opacity 0.3s ease;
+}
+
+.inclusion-item:hover p {
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .tour-categories {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tours .container {
+    width: 95%;
+  }
+  
+  .tour-categories {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .tour-category-card {
+    padding: 1.5rem;
+  }
+  
+  .tour-package {
+    margin-bottom: 1.5rem;
+  }
+  
+  .inclusions-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .tour-inclusions {
+    padding: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tours .container {
+    width: 95%;
+    padding: 0 0.5rem;
+  }
+  
+  .tour-categories {
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+  
+  .tour-category-card {
+    padding: 1.2rem;
+    border-radius: 12px;
+  }
+  
+  .tour-package {
+    padding-left: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .tour-package:hover {
+    padding-left: 1.2rem;
+  }
+  
+  .inclusions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  
+  .inclusion-item {
+    padding: 1.2rem;
+  }
+  
+  .tour-inclusions {
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+}

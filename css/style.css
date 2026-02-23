@@ -367,11 +367,11 @@ section {
 #about_us {
   background: url("https://awe365.com/wp-content/uploads/2013/07/SKY LINE JOURNEYS-sports-hang-gliding-flickrcc-image-by-Steve-Slater.jpg");
   width: 100%;
-  height: 630px;
+  height: 420px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin: 30px 0px 0px 0px;
+  margin: 15px 0px;
 }
 
 #about_us div {
@@ -574,16 +574,242 @@ input[type="submit"]:hover {
 .footer {
   width: 100%;
   min-height: 100px;
-  padding: 20px 80px;
+  padding: 4rem 2rem 2rem;
   margin: 0;
-  background: #222;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   text-align: center;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #fc036b 0%, #764ba2 50%, #fc036b 100%);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto 3rem;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.footer-section {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-section h3 {
+  color: #fc036b;
+  font-family: var(--ff-montserrat);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #fc036b;
+}
+
+.footer-section p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  font-family: var(--ff-roboto);
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.9rem;
+}
+
+.footer-links li a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  display: inline-block;
+  font-family: var(--ff-roboto);
+  position: relative;
+}
+
+.footer-links li a::before {
+  content: '→';
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: #fc036b;
+}
+
+.footer-links li a:hover {
+  color: #fc036b;
+  padding-left: 20px;
+}
+
+.footer-links li a:hover::before {
+  opacity: 1;
+  left: 0;
+}
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: flex-start;
+  font-family: var(--ff-roboto);
+}
+
+.footer-contact li i {
+  color: #fc036b;
+  margin-right: 12px;
+  font-size: 1.2rem;
+  margin-top: 3px;
+  min-width: 20px;
+}
+
+.footer-section .social {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  width: auto;
+  flex-wrap: wrap;
+}
+
+.footer-section .social a {
+  color: whitesmoke;
+  background: rgba(252, 3, 107, 0.1);
+  border: 2px solid rgba(252, 3, 107, 0.3);
+  border-radius: 50%;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+.footer-section .social a:hover {
+  background-color: #fc036b;
+  border-color: #fc036b;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 5px 15px rgba(252, 3, 107, 0.4);
+}
+
+.footer-section .social i {
+  font-size: 1.3rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0.5rem auto;
+  font-size: 0.9rem;
+  font-family: var(--ff-roboto);
+}
+
+.footer-bottom a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin: 0 0.3rem;
+}
+
+.footer-bottom a:hover {
+  color: #fc036b;
+  text-decoration: underline;
 }
 
 .footer p {
   color: whitesmoke;
   margin: 20px auto;
   padding: 20px auto;
+}
+
+.footer span {
+  display: block;
+  color: whitesmoke;
+  padding: 20px auto;
+}
+
+.social {
+  width: 360px;
+  margin: 30px auto;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social a {
+  margin-right: 10px;
+  font-size: 18px;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social a:hover {
+  background-color: #fc036b;
+}
+
+.social i {
+  display: inline;
+  text-align: center;
+  color: whitesmoke;
 }
 
 .footer span {
@@ -638,7 +864,7 @@ img:hover {
 .active {
   border: 2px solid whitesmoke;
   border-radius: 20px;
-  color: #fc036b;
+  color: whitesmoke;
   cursor: pointer;
 }
 
@@ -983,29 +1209,39 @@ input[type=radio] {
 
 /* Popular Destinations */
 .destinations {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   margin: 80px auto;
 }
 
 .destinations .row {
   margin-top: 50px;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   display: flex;
 }
 
 .destinations .col {
-  flex: 1;
-  min-width: 250px;
+  flex: 0 0 calc(33.333% - 1rem);
+  width: calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
   text-align: center;
+  display: flex;
+  box-sizing: border-box;
 }
 
 .destinations .col > div {
-  padding: 1.5rem;
+  padding: 1.5rem 1.2rem;
   border: 2px solid #fc036b;
   border-radius: 10px;
   transition: all 0.3s ease;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 180px;
+  box-sizing: border-box;
 }
 
 .destinations .col > div:hover {
@@ -1015,21 +1251,23 @@ input[type=radio] {
 }
 
 .destinations .col i {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #fc036b;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   display: block;
 }
 
 .destinations .col h3 {
   font-family: var(--ff-montserrat);
-  margin-bottom: 0.5rem;
-  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
 }
 
 .destinations .col p {
-  line-height: 1.6;
+  line-height: 1.4;
   padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
 }
 
 /* Why Book With Us */
@@ -1073,4 +1311,338 @@ input[type=radio] {
 
 .why-book .feature-content {
   margin-top: 2rem;
+}
+
+
+/* ========================================
+   ENHANCED PAGES STYLING - CLEAN & ALIGNED
+   ======================================== */
+
+/* Dark Mode Variables */
+.dark {
+  --card-bg: #f5f5f5;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+body:not(.dark) {
+  --card-bg: #1a1a1a;
+  --bg-color: #000000;
+  --text-color: #ffffff;
+}
+
+/* Font Color Class */
+.font-color {
+  color: inherit;
+}
+
+/* ========================================
+   ABOUT PAGE STYLES
+   ======================================== */
+
+.about-section {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.about-section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-section .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.about-section .col h2 {
+  font-family: var(--ff-montserrat);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-section .col p {
+  line-height: 1.8;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.about-section .col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-section .col ul li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Statistics Section */
+.stats-section {
+  width: 100%;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.stats-section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.stat-item h2 {
+  font-size: 3.5rem;
+  font-family: var(--ff-montserrat);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Values Section */
+.values-section {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.values-section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.value-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(252, 3, 107, 0.2);
+}
+
+.value-card h3 {
+  font-family: var(--ff-montserrat);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ========================================
+   EVENTS PAGE STYLES
+   ======================================== */
+
+.events {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.events .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.events .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.events .card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.events .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(252, 3, 107, 0.3);
+}
+
+.events .card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.events .card h4 {
+  margin: 1.5rem 1.5rem 1rem;
+  font-size: 1.4rem;
+  font-family: var(--ff-montserrat);
+}
+
+.events .card p {
+  flex-grow: 1;
+  margin: 0 1.5rem 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.events .card .ctn {
+  margin: 0 1.5rem 1.5rem;
+  align-self: flex-start;
+}
+
+/* ========================================
+   TOURS PAGE STYLES
+   ======================================== */
+
+.tours {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.tours .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tours .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.tours .col {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   EXPLORE PAGE STYLES
+   ======================================== */
+
+.destinations-section {
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.destinations-section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.destinations-section .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.destinations-section .col img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.destinations-section .col h3 {
+  font-family: var(--ff-montserrat);
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.destinations-section .col p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+/* ========================================
+   GRADIENT SECTIONS (UNIVERSAL)
+   ======================================== */
+
+.gradient-section {
+  width: 100%;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.gradient-section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gradient-section .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.gradient-section .col {
+  text-align: center;
+}
+
+.gradient-section h3 {
+  font-family: var(--ff-montserrat);
+  margin-bottom: 1rem;
+}
+
+.gradient-section p {
+  line-height: 1.6;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
 }

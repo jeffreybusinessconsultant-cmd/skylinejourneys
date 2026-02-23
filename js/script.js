@@ -96,37 +96,37 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-// Update Navbar While Scrolling
-function updateNav() {
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-links li a");
+// Update Navbar While Scrolling - DISABLED
+// function updateNav() {
+//     const sections = document.querySelectorAll("section");
+//     const navLinks = document.querySelectorAll(".nav-links li a");
 
-    sections.forEach((section, index) => {
-        const rect = section.getBoundingClientRect();
+//     sections.forEach((section, index) => {
+//         const rect = section.getBoundingClientRect();
 
-        if (window.screen.width <= 425) {
-            if (rect.top <= 1300) {
-                navLinks.forEach((navLink) => {
-                    navLink.classList.remove("active");
-                });
-                navLinks[index].classList.add("active");
-            }
-        } else if (425 <= window.screen.width <= 768) {
-            if (rect.top <= 1250) {
-                navLinks.forEach((navLink) => {
-                    navLink.classList.remove("active");
-                });
-                navLinks[index].classList.add("active");
-            }
-        } else {
-            if (rect.top <= 1000) {
-                navLinks.forEach((navLink) => {
-                    navLink.classList.remove("active");
-                });
-                navLinks[index].classList.add("active");
-            }
-        }
-    });
-}
+//         if (window.screen.width <= 425) {
+//             if (rect.top <= 1300) {
+//                 navLinks.forEach((navLink) => {
+//                     navLink.classList.remove("active");
+//                 });
+//                 navLinks[index].classList.add("active");
+//             }
+//         } else if (425 <= window.screen.width <= 768) {
+//             if (rect.top <= 1250) {
+//                 navLinks.forEach((navLink) => {
+//                     navLink.classList.remove("active");
+//                 });
+//                 navLinks[index].classList.add("active");
+//             }
+//         } else {
+//             if (rect.top <= 1000) {
+//                 navLinks.forEach((navLink) => {
+//                     navLink.classList.remove("active");
+//                 });
+//                 navLinks[index].classList.add("active");
+//             }
+//         }
+//     });
+// }
 
-window.addEventListener("scroll", updateNav);
+// window.addEventListener("scroll", updateNav);
